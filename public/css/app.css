@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-pink: #FFD1DC;
+    --accent-pink: #FFB6C1;
+    --dark-pink: #FF69B4;
+    --text-color: #4A4A4A;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: #FFF5F6;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--dark-pink) !important;
+}
+
+.hero-section {
+    background-color: var(--primary-pink);
+    border-radius: 0 0 100px 100px;
+    padding: 6rem 0;
+}
+
+.centerimg {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+}
+
+.feature-card {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.custom-btn {
+    background-color: var(--dark-pink);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: var(--accent-pink);
+    transform: translateY(-2px);
+}
